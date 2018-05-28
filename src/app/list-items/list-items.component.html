@@ -1,0 +1,8 @@
+<div class="section">
+    <div *ngFor = "let element of items" class = "itemCard">
+        <app-item [item] = "element"></app-item>
+        <button (click) = "addToBag(element)">Додати в корзину</button>
+    </div>
+</div>
+
+

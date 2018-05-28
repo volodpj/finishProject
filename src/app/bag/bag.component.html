@@ -1,0 +1,6 @@
+<div class="section">
+  <div *ngFor = "let element of items; let i = index" class = "itemCard">
+      <app-item [item] = "element"></app-item>
+      <button (click) = "deleteItem(i)">delete</button>
+  </div>
+</div>
